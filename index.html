@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My porfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#resume">resume</a></li>
+    </ul>
+    </nav>
+    <section id="home">
+   <div class="bio">
+    <img src="pic.jpeg" ><br>
+    <p1>Hello<br>I'm Navya M</p1>
+    </div>
+   </section>
+   <section id="about">
+   <div class="about">
+    <h3>ABOUT</h3>
+   </div>
+   <div class="para">
+    <p>I am currently a BSC Computer Science student.<br>I am studying in S.T.Hindu college.<br>I am currently in my 5th semester</p>
+   </div>
+   </section>
+   <section id="skills">
+   <div class="abb">
+     <h1>MY SKILLS</h1>
+     <li><h4>html</h4>
+        <span class="bar"><span class="html"></span></span>
+    </li>
+    <li><h4>css</h4>
+        <span class="bar"><span class="css"></span></span>
+     </li>
+    <li><h4>javascript</h4>
+        <span class="bar"><span class="javascript"></span></span>
+    </li>
+    <li><h4>c</h4>
+        <span class="bar"><span class="c"></span></span>
+    </li>
+    <li><h4>decision making</h4>
+        <span class="bar"><span class="decisionmaking"></span></span>
+    </li>
+    <li><h4>problem solving</h4>
+        <span class="bar"><span class="problemsolving"></span></span>
+    </li>
+    <li><h4>team work</h4>
+        <span class="bar"><span class="teamwork"></span></span>
+    </li>
+    </div>
+    </section>
+    <section id="resume">
+        <center>
+            <div class="section-content">
+                <h2>resume</h2>
+                <a href="https://1drv.ms/w/s!Aj_JtfCvclUvag3tSpymOSctvIE?e=3tAJaJ" class="download-button">Download CV</a>
+            </div>
+        </center>
+    </section>
+    <footer>
+        <p>&copy; navyamanoharan</p>
+    </footer>
+    <script>
+        document.QuerySelectorAll('a[href^="#"]').forEach(anchor =>
+        {
+            anchor.addEventListener('click', function(e)){
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top:targetElement.offsetTop,behaviour:'smooth'
+                    });
+                }
+            };
+        });
+    </script>
+</body>
+</html> 
